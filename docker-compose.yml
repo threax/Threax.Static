@@ -14,7 +14,7 @@ services:
         source: ../TrustedRoots
         target: /usr/local/share/ca-certificates
       - type: bind
-        source: C:/Development/DockerAppServer/f-droid/www
+        source: ./www
         target: /app/wwwroot
 
 networks:
