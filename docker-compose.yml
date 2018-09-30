@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  static:
+    image: threax.static
+    container_name: static
+    build:
+      context: .
+      dockerfile: Threax.Static/Dockerfile
+    networks:
+      - appnet
+    volumes:
+      - type: bind
+        source: ../TrustedRoots
+        target: /usr/local/share/ca-certificates
+      - type: bind
+        source: C:/Development/DockerAppServer/f-droid/www
+        target: /app/wwwroot
+
+networks:
+  appnet:
+    external: true

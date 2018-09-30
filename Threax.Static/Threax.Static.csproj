@@ -10,6 +10,8 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Threax.Extensions.Configuration.SchemaBinder" Version="1.3.0" />
     <PackageReference Include="Threax.AspNetCore.BuiltInTools" Version="5.1.0" />
+    <PackageReference Include="Threax.AspNetCore.Docker.Certs" Version="2.0.0" />
+    <PackageReference Include="Threax.AspNetCore.UrlFix" Version="1.1.4" />
   </ItemGroup>
 
 </Project>
